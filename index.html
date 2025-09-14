@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salcoh Drywall</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <style>
+    /* Full-size watermark in hero */
+    .hero::before {
+      content: "";
+      background: url('./dist/images/logo.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.04; /* subtle watermark */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-20">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <a href="index.html">
+          <img src="./dist/images/logo.png" alt="Salcoh Logo" class="h-20 w-20">
+        </a>
+        <span class="font-bold text-2xl text-red-600">Salcoh Drywall & Metal Framing</span>
+      </div>
+      <nav class="space-x-6">
+        <a href="#services" class="text-gray-700 hover:text-red-600">Services</a>
+        <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
+        <a href="#customers" class="text-gray-700 hover:text-red-600">Customers</a>
+        <a href="#contact" class="text-gray-700 hover:text-red-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with watermark -->
+  <section class="hero relative bg-gray-100 text-gray-900 py-32 flex items-center justify-center">
+    <div class="relative z-10 max-w-3xl text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Professional Drywall & Metal Framing Services</h1>
+      <p class="text-xl md:text-2xl mb-6">High quality drywall installation and repair for residential and commercial projects.</p>
+      <a href="#contact" class="sticky top-4 bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-gray-800">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#drywall-installation">Drywall Installation</a></h3>
+          <p>Expert installation for new builds and renovations, ensuring smooth and durable walls.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#drywall-repair">Drywall Repair</a></h3>
+          <p>Fix cracks, holes, and water damage efficiently to restore your walls.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#texture-finishing">Texture & Finishing</a></h3>
+          <p>Professional texturing and finishing services to give your walls a flawless look.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#metal-framing">Metal Framing</a></h3>
+          <p>Sturdy and precise metal framing for commercial and residential projects.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#suspended-ceilings">Suspended Ceilings</a></h3>
+          <p>Installation of suspended ceilings for aesthetic and functional spaces.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#hollow-metal-doors">Hollow Metal & Timely Door Installations</a></h3>
+          <p>Reliable installation of hollow metal doors and timely door solutions for any building.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">About Salcoh Drywall</h2>
+      <p class="text-lg">With years of experience, we deliver top-quality drywall services with professionalism and attention to detail. Our team ensures every project is completed on time and within budget.</p>
+    </div>
+  </section>
+
+  <!-- Customers Section -->
+  <section id="customers" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-gray-800">Our Customers</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+        <!-- Add logos here with links -->
+        <a href="https://www.greython.com" target="_blank"><img src="./dist/images/greython.png" alt="Customer 1" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.ramconstruction-us.com" target="_blank"><img src="./dist/images/RAMlogo.png" alt="Customer 2" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.lacnd.com" target="_blank"><img src="./dist/images/lacd.avif" alt="Customer 3" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.ces4.com" target="_blank"><img src="./dist/images/ces4.png" alt="Customer 4" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://memarinc.com" target="_blank"><img src="./dist/images/new-customer-logo.png" alt="Customer 5" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+      </div>
+      <p class="mt-6 text-gray-700">We’ve proudly worked with top construction companies and big brands.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
+      <p class="mb-6">Contact us for a free estimate or to discuss your project needs.</p>
+      <a href="mailto:erick@salcohdrywall.com" class="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition">Email Us</a>
+      <p class="mt-4 text-gray-700">or call us at <strong>(714) 581-0492</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 Salcoh Drywall. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
