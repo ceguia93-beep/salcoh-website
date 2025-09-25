@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salcoh Drywall</title>
+  <style>
+    /* Full-size watermark in hero */
+    .hero::before {
+      content: "";
+      background: url('./assets/logo-B3IDtlSJ.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.04;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    /* Mobile enhancements */
+    @media (max-width: 640px) {
+      header div.flex.items-center.space-x-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 0.3s ease-in-out;
+      }
+      header span {
+        font-size: 1.25rem;
+        text-align: left;
+      }
+      #mobileMenu {
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 1px solid #e5e7eb;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 25;
+      }
+      #mobileMenu.show {
+        transform: translateX(0);
+      }
+      #mobileMenu a {
+        display: block;
+        text-align: left;
+        padding: 0.5rem 1rem;
+      }
+      .hamburger div {
+        transition: all 0.3s ease-in-out;
+      }
+      .hamburger.open div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .hamburger.open div:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      .hero a { padding: 0.5rem 1rem; }
+      .grid { gap: 1rem !important; }
+    }
+
+    /* Header shrink on scroll for mobile */
+    @media (max-width: 640px) {
+      header.shrink {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+      header.shrink img {
+        height: 48px !important;
+        width: 48px !important;
+      }
+      header.shrink span {
+        font-size: 1rem !important;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/index-vN_7u3bh.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <a href="index.html">
+          <img src="./assets/logo-B3IDtlSJ.png" alt="Salcoh Logo" class="h-16 w-16 sm:h-20 sm:w-20 md:h-20 md:w-20 transition-all duration-300">
+        </a>
+        <span class="font-bold text-xl sm:text-2xl text-red-600 transition-all duration-300">Salcoh Drywall & Metal Framing</span>
+      </div>
+      <div class="sm:hidden flex flex-col cursor-pointer space-y-1 hamburger" onclick="toggleMenu(this)">
+        <div class="w-6 h-1 bg-gray-800"></div>
+        <div class="w-6 h-1 bg-gray-800"></div>
+        <div class="w-6 h-1 bg-gray-800"></div>
+      </div>
+      <nav id="mobileMenu" class="hidden sm:flex space-x-6">
+        <a href="#services" class="text-gray-700 hover:text-red-600">Services</a>
+        <a href="#about" class="text-gray-700 hover:text-red-600">About</a>
+        <a href="#customers" class="text-gray-700 hover:text-red-600">Customers</a>
+        <a href="#contact" class="text-gray-700 hover:text-red-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero relative bg-gray-100 text-gray-900 py-32 flex items-center justify-center">
+    <div class="relative z-10 max-w-3xl text-center px-4">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Professional Drywall & Metal Framing Services</h1>
+      <p class="text-lg sm:text-xl md:text-2xl mb-6">High quality drywall installation and repair for residential and commercial projects.</p>
+      <a href="#contact" class="sticky top-4 bg-red-600 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-red-700 transition">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-gray-800">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#drywall-installation">Drywall Installation</a></h3>
+          <p>Expert installation for new builds and renovations, ensuring smooth and durable walls.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#drywall-repair">Drywall Repair</a></h3>
+          <p>Fix cracks, holes, and water damage efficiently to restore your walls.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#texture-finishing">Texture & Finishing</a></h3>
+          <p>Professional texturing and finishing services to give your walls a flawless look.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#metal-framing">Metal Framing</a></h3>
+          <p>Sturdy and precise metal framing for commercial and residential projects.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#suspended-ceilings">Suspended Ceilings</a></h3>
+          <p>Installation of suspended ceilings for aesthetic and functional spaces.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow hover:shadow-lg transition hover:border-red-300">
+          <h3 class="text-xl font-semibold mb-2 text-red-600"><a href="services.html#hollow-metal-doors">Hollow Metal & Timely Door Installations</a></h3>
+          <p>Reliable installation of hollow metal doors and timely door solutions for any building.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-20 scroll-mt-28">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">About Salcoh Drywall</h2>
+      <p class="text-lg">With years of experience, we deliver top-quality drywall services with professionalism and attention to detail. Our team ensures every project is completed on time and within budget.</p>
+    </div>
+  </section>
+
+  <!-- Customers Section -->
+  <section id="customers" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12 text-gray-800">Our Customers</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+        <a href="https://www.greython.com" target="_blank"><img src="./assets/greython-BJTmTyii.png" alt="Customer 1" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.ramconstruction-us.com" target="_blank"><img src="./assets/RAMlogo-HxUijwj4.png" alt="Customer 2" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.lacnd.com" target="_blank"><img src="./assets/lacd logo-RhE5yIfs.png" alt="Customer 3" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://www.ces4.com" target="_blank"><img src="./assets/ces4-Dlal7MpL.png" alt="Customer 4" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+        <a href="https://memarinc.com" target="_blank"><img src="./assets/new-customer-logo-CXCwArul.png" alt="Customer 5" class="mx-auto h-20 object-contain transform transition duration-300 hover:scale-110 hover:shadow-lg"></a>
+      </div>
+      <p class="mt-6 text-gray-700">We’ve proudly worked with top construction companies and big brands.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Get in Touch</h2>
+      <p class="mb-6">Contact us for a free estimate or to discuss your project needs.</p>
+      <a href="mailto:erick@salcohdrywall.com" class="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 transition">Email Us</a>
+      <p class="mt-4 text-gray-700">or call us at <strong>(714) 581-0492</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-20">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 Salcoh Drywall. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile menu and animate hamburger
+    function toggleMenu(el) {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+      el.classList.toggle('open');
+    }
+
+    // Header shrink on scroll for mobile
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50 && window.innerWidth <= 640) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+    });
+  </script>
+</body>
+</html>

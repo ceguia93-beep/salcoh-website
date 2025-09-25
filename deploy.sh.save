@@ -1,0 +1,12 @@
+#!/bin/bash
+# Navigate to project directory
+cd ~/Desktop/salcoh-website-fresh
+
+# Deploy to Vercel production
+vercel --prod --confirm
+
+echo "✅ Deployed latest version to Vercel production!"
+
+nano deploy.sh
+
+
